@@ -22,7 +22,11 @@ public class ListaAlunos {
 	
 	public void imprimeLista() {
 		for(int i=0; i<alunos.length; i++) { //percorrendo o vetor
+			if(alunos[i] == null) {
+				System.out.println("vazio");
+			}else {
 			System.out.println(alunos[i].toString());
+			}
 		}
 	}
 	
